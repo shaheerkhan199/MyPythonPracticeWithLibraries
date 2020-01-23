@@ -1,90 +1,10 @@
-{% extends 'base.html' %}
-   {% block title %} Homepage {% endblock %}
+{% extends 'mainTemplate.html' %}
+{% block title %} Homepage {% endblock %}
 
-    {% block content %}
+ {% block content %}
         <section>
             <div class="container-fluid">
-                <div class="row bg-dark text-light">
-                    <div class="col-md-12 text-center">
-                    <p>
-                        <a href="">Customer Care</a> |
-                        <a href="">Today's Offer</a> |
-                        <a href="">Download App</a> |
-                        <a href="">Advertise</a> |
-                        <a href="">Sell Product</a> |
-                        <a href="">Track Order</a> |
-                        <a href="">Gift Card</a> |
-                        <a href="">Contact us</a> |
-                        <a href="/shop/signup">Signup</a></p>
-                    </div>
-                </div>
 
-                <div class="row mt-1 ">
-                    <div class="col-md-2 logo">
-                        <a href="/shop/" ><h2>SmartShop</h2></a>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="row mt-1">
-                            <div class="col-md-10">
-                                <input type="text" class="form-control" placeholder="Search here" name="">
-                            </div>
-                            <div class="col-md-2">
-                                <input type="button" value="Search" class="btn btn-success" name="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <input type="button" value="Cart" class="btn btn-warning btn-block" name="">
-                    </div>
-                </div>
-
-                <div class="row bg-dark mt-2">
-                    <div class="col-md-10">
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-
-                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
-                                <a class="nav-link" href="#">Electronics <span class="sr-only">(current)</span></a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Clothing</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Mens</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Womens</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Books</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Mobile</a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Dropdown
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item" href="#">Action</a>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                              </li>
-                            </ul>
-                          </div>
-                        </nav>
-                    </div>
-                    <div class="col-md-2 mt-2">
-                       <a href="/shop/login" class="btn btn-warning btn-block">Login</a> <!-- <input type="button" value="Login" class="btn btn-warning btn-block" name=""> -->
-                    </div>
-                </div>
 
                 <div class="row">
                     <div class="col-md-12">
@@ -169,9 +89,4 @@
             </div>
           </div>
         </section> <!--Product Catlogue-->
-
-        <footer class="text-center text-light bg-dark p-2">
-          <p>Copyright &copy; | Designed by Sheri | 2020</p>
-        </footer>
-
-    {% endblock %}
+{% endblock %}

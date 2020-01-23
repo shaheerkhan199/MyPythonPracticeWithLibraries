@@ -1,0 +1,19 @@
+.box{
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	border:1px solid lightgrey;
+	padding: 20px;
+	box-shadow: 5px 5px lightgrey;
+}
+.fogotpassandsignup p{
+	padding: 10px;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+h1{
+    color:red;
+}

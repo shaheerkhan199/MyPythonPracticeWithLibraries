@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="332ed610-0359-4c87-9857-3f94871bc5ed" name="Default Changelist" comment="" />
+    <list default="true" id="332ed610-0359-4c87-9857-3f94871bc5ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Shop/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/static/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/static/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/static/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/static/css/bootstrap-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/static/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/static/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/static/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/static/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/static/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/static/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/static/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/static/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/static/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/static/js/npm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +32,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1WbadlXEApTTvZL0mhHCu47qctA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,6 +46,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -51,10 +73,29 @@
     </task>
     <servers />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="232" y="156" key="#Notifications" timestamp="1579421173102">
+    <state x="232" y="156" key="#Notifications" timestamp="1579509970232">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state x="232" y="156" key="#Notifications/0.0.1280.994@0.0.1280.994" timestamp="1579421173102" />
+    <state x="232" y="156" key="#Notifications/0.0.1280.994@0.0.1280.994" timestamp="1579509970232" />
+    <state x="294" y="90" key="CommitChangelistDialog2" timestamp="1579752560924">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state x="294" y="90" key="CommitChangelistDialog2/0.0.1280.994@0.0.1280.994" timestamp="1579752560924" />
+    <state x="141" y="140" key="SettingsEditor" timestamp="1579510313131">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state x="141" y="140" key="SettingsEditor/0.0.1280.994@0.0.1280.994" timestamp="1579510313131" />
+    <state x="335" y="321" key="com.intellij.ide.util.TipDialog" timestamp="1579752353419">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state x="335" y="321" key="com.intellij.ide.util.TipDialog/0.0.1280.994@0.0.1280.994" timestamp="1579752353419" />
+    <state x="303" y="213" width="672" height="678" key="search.everywhere.popup" timestamp="1579752741299">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state x="303" y="213" width="672" height="678" key="search.everywhere.popup/0.0.1280.994@0.0.1280.994" timestamp="1579752741299" />
   </component>
 </project>

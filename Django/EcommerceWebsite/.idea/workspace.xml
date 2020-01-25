@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="332ed610-0359-4c87-9857-3f94871bc5ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TestApp/templates/myContact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestApp/templates/table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/templates/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EcommerceWebsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EcommerceWebsite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EcommerceWebsite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/EcommerceWebsite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/static/Shop/css/customStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/static/Shop/css/customStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/templates/mainTemplate.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/templates/mainTemplate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestApp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

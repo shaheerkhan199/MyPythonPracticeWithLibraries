@@ -2,11 +2,8 @@
 	margin: 0;
 	padding: 0;
 }
-.box{
-	border:1px solid lightgrey;
-	padding: 20px;
-	box-shadow: 5px 5px lightgrey;
-}
-.fogotpassandsignup p{
-	padding: 10px;
+
+
+.like {
+  font-size: 1.5rem;
 }

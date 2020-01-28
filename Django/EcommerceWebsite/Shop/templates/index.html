@@ -89,5 +89,35 @@
             </div>
           </div>
         </section> <!--Product Catlog-->
+{% load static %}
+<div class="container">
+  <div class="row ">
+    {% for product in products %}
+    <div class="col-12 col-sm-8 col-md-6 col-lg-4 mt-2">
+      <div class="card">
+        <img class="card-img" src="static/Shop/{{ product.product_image }}" alt="Vans">
+        <div class="card-body">
+          <h4 class="card-title">{{ product.product_name }}</h4>
+          <h6 class="card-subtitle mb-2 text-muted">Product ID: {{ product.product_id }}</h6>
+          <p class="card-text">
+            {{ product.product_desc }}</p>
+          <div class="price "><h5 class="mt-4">Rs-{{ product.product_price }}/=</h5></div>
+          <div class="buy d-flex justify-content-between align-items-center">
+
+<!--             <a href="#" class="btn btn-danger mt-3 po"> Add to Cart</a><a href="#">Negotiate</a>-->
+                <input type="button" class="btn btn-danger" value="View Product">
+                <input type="button" class="btn btn-warning" value="Negotiate">
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+
+
+
+  </div>
+</div>
+
+
 
 {% endblock %}

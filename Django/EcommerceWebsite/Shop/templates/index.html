@@ -4,8 +4,6 @@
  {% block content %}
         <section>
             <div class="container-fluid">
-
-
                 <div class="row">
                     <div class="col-md-12">
                         <div id="demo" class="carousel slide" data-ride="carousel">
@@ -47,49 +45,7 @@
             </div>
         </section>  <!--Header End -->
 
-<!--        <section>-->
-<!--          <div class="container-fluid mt-4">-->
-<!--            <h2 class="text-center"> Product Catlog</h2>-->
-<!--          </div>-->
-<!--          <div class="row">-->
-<!--            <div class="col-md-4">-->
-<!--                <div class="card" style="width: 18rem;">-->
-<!--                    {% load static %}-->
-<!--                  <img class="card-img-top" src="{% static 'Shop/images/hoodie.png' %}" alt="Card image cap">-->
-<!--                  <div class="card-body">-->
-<!--                    <h5 class="card-tit le">Card title</h5>-->
-<!--                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
-<!--                    <a href="#" class="btn btn-success">More Details</a>-->
-<!--                    <a href="#" class="btn btn-secondary">Negotiate</a>-->
-
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div class="col-md-4">-->
-<!--                <div class="card" style="width: 18rem;">-->
-<!--                  <img class="card-img-top" src="{% static 'Shop/images/hoodie.png' %}" alt="Card image cap" >-->
-<!--                  <div class="card-body">-->
-<!--                    <h5 class="card-tit le">Card title</h5>-->
-<!--                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
-<!--                    <a href="#" class="btn btn-success">More Details</a>-->
-<!--                    <a href="#" class="btn btn-secondary">Negotiate</a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div class="col-md-4">-->
-<!--                <div class="card" style="width: 18rem;">-->
-<!--                  <img class="card-img-top" src="{% static 'Shop/images/hoodie.png' %}" alt="Card image cap" >-->
-<!--                  <div class="card-body">-->
-<!--                    <h5 class="card-tit le">Card title</h5>-->
-<!--                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
-<!--                    <a href="#" class="btn btn-success">More Details</a>-->
-<!--                    <a href="#" class="btn btn-secondary">Negotiate</a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </section> &lt;!&ndash;Product Catlog&ndash;&gt;-->
-<!--{% load static %}-->
+<!--This is start of products catalog-->
 <div class="container">
     <h2 class="text-center mt-5"> Product Catlog</h2>
     <hr color="lightgrey" />
@@ -107,19 +63,17 @@
           <div class="buy d-flex justify-content-between align-items-center">
 
 <!--             <a href="#" class="btn btn-danger mt-3 po"> Add to Cart</a><a href="#">Negotiate</a>-->
-                <input type="button" class="btn btn-danger" value="View Product">
+<!--                <input type="button" class="btn btn-danger" value="View Product">-->
+                <a href="/shop/productDetails/{{ product.pk }}" class="btn btn-danger">View Product</a>
                 <input type="button" class="btn btn-warning" value="Negotiate">
           </div>
         </div>
       </div>
     </div>
   {% endfor %}
-
-
-
-  </div>
 </div>
-
+</div>
+<!--This is end of product catalogs-->
 
 
 {% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'mainTemplate.html' %}
+
+{% block content %}
+
+
+
+<!--<h2>Product Name is {{ product_details.product_name }}</h2>-->
+
+<section>
+    <div class="container bg-light border border-black">
+        <h1>Product details</h1>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <img src="../../../media/{{ product_details.product_image }}" class="img-fluid mb-3" alt="" width="400vh" height="400vh">
+            </div>
+            <div class="col-md-6">
+                <h5>Product Name:</h5>
+                <p>{{ product_details.product_name }}</p>
+
+                <h5>Description:</h5>
+                <p>{{ product_details.product_desc }}</p>
+
+                <h5>Price:</h5>
+                <p>Rs: {{ product_details.product_price }}/=</p>
+
+                <h5>Apply Coupon:</h5>
+                <input type="text" class="form-control" placeholder="Enter promo code here">
+
+                <a href="#" class="btn btn-success">Add to cart</a>
+                <a href="#" class="btn btn-warning">Negotiate</a>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

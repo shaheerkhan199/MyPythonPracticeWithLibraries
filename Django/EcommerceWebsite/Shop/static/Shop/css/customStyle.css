@@ -2,8 +2,30 @@
 	margin: 0;
 	padding: 0;
 }
-
-
 .like {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
+}
+.loginbox{
+    border:1px solid lightgrey;
+	padding: 20px;
+	box-shadow: 5px 5px lightgrey;
+}
+
+.signupbox{
+	border:1px solid lightgrey;
+	padding: 25px;
+	box-shadow: 5px 5px lightgrey;
+}
+input[type="password"],input[type="email"],input[type="number"],input[type="text"], input[type="date"], input[type="textarea"],select{
+	/*border-bottom:1px solid black;*/
+    margin: 10px 0px;
+}
+.uppernav a{
+    color: lightgrey;
+    text-decoration:none;
+    padding:15px;
+}
+.uppernav a:hover{
+    color: lightgreen;
+    text-decoration:none;
 }

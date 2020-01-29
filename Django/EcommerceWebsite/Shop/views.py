@@ -27,3 +27,11 @@ def contact(request):
 def about(request):
     return render(request, 'about.html')
 
+
+def product_details(request, p_id):
+    details_of_click_product = Product.objects.get(pk=p_id)
+    data = {
+        'product_details': details_of_click_product
+    }
+    return render(request, 'productDetails.html', data)
+

@@ -47,58 +47,60 @@
             </div>
         </section>  <!--Header End -->
 
-        <section>
-          <div class="container-fluid mt-4">
-            <h2 class="text-center"> Product Catlog</h2>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    {% load static %}
-                  <img class="card-img-top" src="{% static 'Shop/images/hoodie.png' %}" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-tit le">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-success">More Details</a>
-                    <a href="#" class="btn btn-secondary">Negotiate</a>
+<!--        <section>-->
+<!--          <div class="container-fluid mt-4">-->
+<!--            <h2 class="text-center"> Product Catlog</h2>-->
+<!--          </div>-->
+<!--          <div class="row">-->
+<!--            <div class="col-md-4">-->
+<!--                <div class="card" style="width: 18rem;">-->
+<!--                    {% load static %}-->
+<!--                  <img class="card-img-top" src="{% static 'Shop/images/hoodie.png' %}" alt="Card image cap">-->
+<!--                  <div class="card-body">-->
+<!--                    <h5 class="card-tit le">Card title</h5>-->
+<!--                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--                    <a href="#" class="btn btn-success">More Details</a>-->
+<!--                    <a href="#" class="btn btn-secondary">Negotiate</a>-->
 
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="{% static 'Shop/images/hoodie.png' %}" alt="Card image cap" >
-                  <div class="card-body">
-                    <h5 class="card-tit le">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-success">More Details</a>
-                    <a href="#" class="btn btn-secondary">Negotiate</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="{% static 'Shop/images/hoodie.png' %}" alt="Card image cap" >
-                  <div class="card-body">
-                    <h5 class="card-tit le">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-success">More Details</a>
-                    <a href="#" class="btn btn-secondary">Negotiate</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> <!--Product Catlog-->
-{% load static %}
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-4">-->
+<!--                <div class="card" style="width: 18rem;">-->
+<!--                  <img class="card-img-top" src="{% static 'Shop/images/hoodie.png' %}" alt="Card image cap" >-->
+<!--                  <div class="card-body">-->
+<!--                    <h5 class="card-tit le">Card title</h5>-->
+<!--                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--                    <a href="#" class="btn btn-success">More Details</a>-->
+<!--                    <a href="#" class="btn btn-secondary">Negotiate</a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-4">-->
+<!--                <div class="card" style="width: 18rem;">-->
+<!--                  <img class="card-img-top" src="{% static 'Shop/images/hoodie.png' %}" alt="Card image cap" >-->
+<!--                  <div class="card-body">-->
+<!--                    <h5 class="card-tit le">Card title</h5>-->
+<!--                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--                    <a href="#" class="btn btn-success">More Details</a>-->
+<!--                    <a href="#" class="btn btn-secondary">Negotiate</a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </section> &lt;!&ndash;Product Catlog&ndash;&gt;-->
+<!--{% load static %}-->
 <div class="container">
+    <h2 class="text-center mt-5"> Product Catlog</h2>
+    <hr color="lightgrey" />
   <div class="row ">
     {% for product in products %}
     <div class="col-12 col-sm-8 col-md-6 col-lg-4 mt-2">
       <div class="card">
-        <img class="card-img" src="static/Shop/{{ product.product_image }}" alt="Vans">
+        <img class="card-img" src="../media/{{ product.product_image }}" alt="Vans" height="250" width="150">
         <div class="card-body">
           <h4 class="card-title">{{ product.product_name }}</h4>
-          <h6 class="card-subtitle mb-2 text-muted">Product ID: {{ product.product_id }}</h6>
+          <h6 class="card-subtitle mb-2 text-muted">Product ID: {{ product.pk }}</h6>
           <p class="card-text">
             {{ product.product_desc }}</p>
           <div class="price "><h5 class="mt-4">Rs-{{ product.product_price }}/=</h5></div>

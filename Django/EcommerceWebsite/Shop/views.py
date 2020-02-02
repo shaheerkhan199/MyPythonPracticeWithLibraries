@@ -39,21 +39,16 @@ def save_customer_data_on_signup(request):
     gender = request.POST.get('gender')
     address = request.POST.get('address')
     new_customer = Customer(customer_first_name = first_name, customer_last_name = last_name, customer_email = email, customer_phone = phone, customer_password = password, customer_DOB = dob, customer_gender = gender, customer_address = address)
-    #
-    # try:
-    #     match = Customer.objects.get(customer_email=email)
-    # except Customer.DoesNotExist:
-    #     # Unable to find a user, this is fine
-    #     return HttpResponse('Email Already exist')
-    # else:
-    #     new_customer.save()
-    #     return HttpResponse('Data Inserted Successfully')
-    match = Customer.objects.get(customer_email=email)
-    if match:
-        return HttpResponse('Email Already exist')
-    else:
+    try:
+        match = Customer.objects.get(customer_email=email)
+    except Customer.DoesNotExist:
         new_customer.save()
         return HttpResponse('Data Inserted Successfully')
+    else:
+        return HttpResponse('Email Already exist')
+
+
+
 
 
 def product_details(request, p_id):

@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="332ed610-0359-4c87-9857-3f94871bc5ed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/templates/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
@@ -108,10 +106,10 @@
       <screen x="0" y="0" width="1280" height="994" />
     </state>
     <state x="141" y="140" key="SettingsEditor/0.0.1280.994@0.0.1280.994" timestamp="1579766741164" />
-    <state x="335" y="321" key="com.intellij.ide.util.TipDialog" timestamp="1580544538023">
+    <state x="335" y="321" key="com.intellij.ide.util.TipDialog" timestamp="1580628686139">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state x="335" y="321" key="com.intellij.ide.util.TipDialog/0.0.1280.994@0.0.1280.994" timestamp="1580544538023" />
+    <state x="335" y="321" key="com.intellij.ide.util.TipDialog/0.0.1280.994@0.0.1280.994" timestamp="1580628686139" />
     <state x="303" y="213" width="672" height="678" key="search.everywhere.popup" timestamp="1579752741299">
       <screen x="0" y="0" width="1280" height="994" />
     </state>

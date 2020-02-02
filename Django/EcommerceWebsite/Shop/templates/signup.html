@@ -3,30 +3,60 @@
 
 {% block content %}
 	<script type="text/javascript">
+
 		$(document).ready(function(){
-			$("#submitBtn").click(function(){
-				var fNameBoxVal = $("#fNameBox").val();
-				var lNameBoxVal = $("#lNameBox").val();
-				var emailBoxVal = $("#emailBox").val();
-				var numberBoxVal = $("#numberBox").val();
-				var passwordBoxVal = $("#passwordBox").val();
-				var confirmPasswordBoxVal = $("#confirmPasswordBox").val();
-				var dateBoxVal = $("#dateBox").val();
-				var genderBoxVal = $("#genderBox").val();
-				var addressBoxVal = $("#addressBox").val();
 
+		$(':input[type="submit"]').prop('disabled', true);
+		var pass_field = document.getElementById("passwordBox");
+		var confirm_pass_field = document.getElementById("confirmPasswordBox");
+		pass_field.onkeyup = function() {
+			var lowerCaseLetters = /[a-z]/g;
+			var upperCaseLetters = /[A-Z]/g;
+			var numbers = /[0-9]/g;
+			if(pass_field.value.length < 8)
+			{
+				$("#p5").text("Password must Contain at least 8 characters").css("color","red");
+				$(':input[type="submit"]').prop('disabled', true);
+			}
+			if(! pass_field.value.match(numbers))
+			{
+				$("#p5").text("Password must Contain numbers").css("color","red");
+				$(':input[type="submit"]').prop('disabled', true);
+			}
+			if(! pass_field.value.match(upperCaseLetters))
+			{
+				$("#p5").text("Password must Contain some Upper letters").css("color","red");
+				$(':input[type="submit"]').prop('disabled', true);
+			}
+			if(! pass_field.value.match(lowerCaseLetters))
+			{
+				$("#p5").text("Password must Contain some lower letters").css("color","red");
+				$(':input[type="submit"]').prop('disabled', true);
+			}
+			var msg = $("#p5").val();
+			if(pass_field.value.length >= 8 && pass_field.value.match(lowerCaseLetters) && pass_field.value.match(upperCaseLetters) && pass_field.value.match(numbers) && msg == '')
+			{
+				$("#p5").text("Strong password").css("color","green");;
 
+			}
 
-				if(passwordBoxVal != confirmPasswordBoxVal)
-				{
-					$("#p6").text("Password does not match").css("color","red");
+		}
+		confirm_pass_field.onfocus = function() {
+				confirm_pass_field.onkeyup = function() {
+						//var pass = pass_field.value
+						if (pass_field.value != confirm_pass_field.value){
+							$("#p6").text("Password does not match").css("color","red");
+							$(':input[type="submit"]').prop('disabled', true);
+						}
+						else{
+							$("#p6").text("Password Matched").css("color","green");
+							$(':input[type="submit"]').prop('disabled', false);
+						}
 				}
-				else
-				{
-					$("#p6").text("").css("color","red");
-				}
-			});	
-		});
+			}
+
+
+});
 	</script>
 
 	 <form method="post" action="/shop/StoreData/">
@@ -106,6 +136,9 @@
 			</div>
 			<div class="col-md-2"></div>
 		</div>
+			<br/>
+		<!-- Showing alerts for password validation	-->
+
 	</div>
 	 </form>
-{% endblock %}
+{% endblock 	%}

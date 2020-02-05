@@ -4,6 +4,10 @@ from django.http import HttpResponse
 
 
 def index(request):
-    #return HttpResponse("This is ChatBot Chat App")
+    # return HttpResponse("This is ChatBot Chat App")
+    return render(request, 'chatWindow.html')
+
+
+def render_chat_window(request):
     return render(request, 'chatWindow.html')
 

@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %} {% endblock %}</title>
     {% load static %}
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="{% static 'ChatBot/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'ChatBot/css/bootstrap.min.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
-	<link href="{% static 'Shop/css/customStyle.css' %}" rel="stylesheet">
-    <link href="{% static 'Shop/css/bootstrap.min.css' %}" rel="stylesheet">
-
-
-
 
 </head>
 <body>
     {% block content %}
 
     {% endblock %}
+    <script src="{% static 'ChatBot/js/jquery-3.4.1.min.js' %}"></script>
+	<script src="{% static 'ChatBot/js/bootstrap.min.js' %}"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
-    <script src="{% static 'Shop/js/jquery-3.4.1.min.js' %}"></script>
-	<script src="{% static 'Shop/js/bootstrap.min.js' %}"></script>
+
 </body>
 </html>

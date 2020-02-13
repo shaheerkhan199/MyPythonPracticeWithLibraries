@@ -66,6 +66,8 @@
 			border:0 !important;
 			color: white !important;
 			cursor: pointer;
+			height: 60px;
+    margin-top: auto;
 		}
 		.search_btn{
 			border-radius: 0 15px 15px 0 !important;

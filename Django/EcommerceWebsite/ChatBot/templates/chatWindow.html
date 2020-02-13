@@ -4,6 +4,34 @@
 
 {% block content %}
     {% load static %}
+<script>
+	$(document).ready(function(){
+  $("#sndMsg").click(function(){
+		var msg = $("#msgArea").val();
+		if (msg != "")
+		{
+			var html = '\
+			<div class="d-flex justify-content-end mb-4">\
+								<div class="msg_cotainer_send">\
+									'+msg+' \
+									<span class="msg_time_send">8:43 AM, Today</span>\
+								</div>\
+								<div class="img_cont_msg">\
+						<img src="{% static 'ChatBot/images/user1.jpg' %}" class="rounded-circle user_img_msg">\
+								</div>\
+							</div>\
+							';
+					$('.msg_card_body').append(html);
+					chat_scrolldown();
+					var msg = $("#msgArea").val("");
+		}
+
+  });
+});
+function chat_scrolldown() {
+        $(".msg_card_body").animate({ scrollTop: $(".msg_card_body")[0].scrollHeight }, 500);
+    }
+</script>
     <div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12 col-xl-12 chat align-self-center mx-auto">
@@ -99,9 +127,9 @@
 							<div class="input-group">
 
 								<!-- <textarea name="" class="form-control type_msg" placeholder="Type your message..."></textarea> -->
-								<input type="text"  name="" class="form-control type_msg" placeholder="Type your message...">
+								<input type="text"  id="msgArea" class="form-control type_msg" placeholder="Type your message...">
 								<div class="input-group-append">
-									<span class="input-group-text send_btn">Send &nbsp; <i class="fas fa-location-arrow"></i></span>
+									<span class="input-group-text send_btn btn btn-primary" id="sndMsg">Send &nbsp; <i class="fas fa-location-arrow"></i></span>
 								</div>
 							</div>
 						</div>

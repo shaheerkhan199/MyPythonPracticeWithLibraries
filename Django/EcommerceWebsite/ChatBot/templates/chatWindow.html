@@ -4,18 +4,22 @@
 
 {% block content %}
     {% load static %}
+<script>var data = "{{ serialized_data | safe }}"; </script>
 <script>
 
 	//My code
 	$(document).ready(function(){
-	 /* $("#sndMsg").click(function(){
-			var msg = $("#msgArea").val();
-			if (msg != "")
+
+		// This is the function that fetch the response from Python Chatbot
+		function getBotResponse()
+		{
+			var rawText = $("#msgArea").val();
+			if (rawText != "")
 			{
 				var html = '\
 				<div class="d-flex justify-content-end mb-4">\
 									<div class="msg_cotainer_send">\
-										'+msg+' \
+										'+rawText+' \
 										<span class="msg_time_send">8:43 AM, Today</span>\
 									</div>\
 									<div class="img_cont_msg">\
@@ -24,18 +28,37 @@
 								</div>\
 								';
 						$('.msg_card_body').append(html);
-						chat_scrolldown();
+						//	chat_scrolldown();
 						var msg = $("#msgArea").val("");
 			}
+			//document.getElementById('#msg_card_body').scrollIntoView({block: 'start', behavior: 'smooth'});
+			$.get("/ChatBot/giveResponse", { msg: rawText }).done(function(data) {
 
-	  });*/
+			var botHtml = '\
+						<div class="d-flex justify-content-start mb-4">\
+								<div class="img_cont_msg">\
+									<img src="{% static 'ChatBot/images/shaheer.jpeg' %}" class="rounded-circle user_img_msg">\
+								</div>\
+								<div class="msg_cotainer">\
+									'+ {{ botResponse }} +'\
+									<span class="msg_time">8:43 AM, Today</span>\
+								</div>\
+							</div>\
+					';
+			$(".msg_card_body").append(botHtml);
+			//document.getElementById('#msg_card_body').scrollIntoView({block: 'start', behavior: 'smooth'});
+			});
 
+		}
+
+
+	// This is for Enter Key press Event of send button
 	  $("#msgArea").keypress(function(e) {
 			if(e.which == 13)
 			{
 				//getBotResponse();
 				var msg = $("#msgArea").val();
-				if (msg != "")
+				/*if (msg != "")
 				{
 					var html = '\
 				<div class="d-flex justify-content-end mb-4">\
@@ -51,14 +74,16 @@
 						$('.msg_card_body').append(html);
 						chat_scrolldown();
 						var msg = $("#msgArea").val("");
-				}
+				}*/
+				getBotResponse();
 			}
 		});
 
+		// This is for on click Event of send button
 		$("#sndMsg").click(function() {
-		//getBotResponse();
+		getBotResponse();
 			var msg = $("#msgArea").val();
-				if (msg != "")
+				/*if (msg != "")
 				{
 					var html = '\
 				<div class="d-flex justify-content-end mb-4">\
@@ -74,7 +99,7 @@
 						$('.msg_card_body').append(html);
 						chat_scrolldown();
 						var msg = $("#msgArea").val("");
-				}
+				}*/
 		})
 });
 function chat_scrolldown() {
@@ -107,7 +132,7 @@ function chat_scrolldown() {
 								</ul>
 							</div>
 						</div>
-						<div class="card-body msg_card_body">
+						<div class="card-body msg_card_body" id="msg_card_body">
 							<div class="d-flex justify-content-start mb-4">
 								<div class="img_cont_msg">
 									<img src="{% static 'ChatBot/images/shaheer.jpeg' %}" class="rounded-circle user_img_msg">
@@ -176,7 +201,7 @@ function chat_scrolldown() {
 							<div class="input-group">
 
 								<!-- <textarea name="" class="form-control type_msg" placeholder="Type your message..."></textarea> -->
-								<input type="text"  id="msgArea" class="form-control type_msg" placeholder="Type your message...">
+								<input type="text" name="msgBox"  id="msgArea" class="form-control type_msg" placeholder="Type your message...">
 								<div class="input-group-append">
 									<span class="input-group-text send_btn btn btn-primary" id="sndMsg">Send &nbsp; <i class="fas fa-location-arrow"></i></span>
 								</div>

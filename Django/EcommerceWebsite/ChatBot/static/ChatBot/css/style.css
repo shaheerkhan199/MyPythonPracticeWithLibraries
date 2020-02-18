@@ -26,7 +26,8 @@
 			border-bottom: 0 !important;
 		}
 	 .card-footer{
-		border-radius: 0 0 15px 15px !important;
+          bottom: 0 !important;
+	    border-radius: 0 0 15px 15px !important;
 			border-top: 0 !important;
 	}
 		.container{

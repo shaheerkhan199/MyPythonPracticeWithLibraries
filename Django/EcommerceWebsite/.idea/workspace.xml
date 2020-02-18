@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="332ed610-0359-4c87-9857-3f94871bc5ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ChatBot/templates/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatBot/static/ChatBot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBot/static/ChatBot/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatBot/static/ChatBot/images/user1.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatBot/templates/chatWindow.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBot/templates/chatWindow.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatBot/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBot/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatBot/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBot/views.py" afterDir="false" />
@@ -16,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -85,10 +88,10 @@
       <screen x="0" y="0" width="1280" height="994" />
     </state>
     <state x="232" y="156" key="#Notifications/0.0.1280.994@0.0.1280.994" timestamp="1579509970232" />
-    <state x="392" y="300" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579754112316">
+    <state x="392" y="300" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581984378748">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state x="392" y="300" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.994@0.0.1280.994" timestamp="1579754112316" />
+    <state x="392" y="300" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.994@0.0.1280.994" timestamp="1581984378748" />
     <state x="408" y="328" key="#com.intellij.tools.ToolEditorDialog" timestamp="1579766655605">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
@@ -105,10 +108,10 @@
       <screen x="0" y="0" width="1280" height="994" />
     </state>
     <state x="141" y="140" key="SettingsEditor/0.0.1280.994@0.0.1280.994" timestamp="1579766741164" />
-    <state x="335" y="321" key="com.intellij.ide.util.TipDialog" timestamp="1581843270132">
+    <state x="335" y="321" key="com.intellij.ide.util.TipDialog" timestamp="1581983144550">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state x="335" y="321" key="com.intellij.ide.util.TipDialog/0.0.1280.994@0.0.1280.994" timestamp="1581843270132" />
+    <state x="335" y="321" key="com.intellij.ide.util.TipDialog/0.0.1280.994@0.0.1280.994" timestamp="1581983144550" />
     <state x="303" y="213" width="672" height="678" key="search.everywhere.popup" timestamp="1579752741299">
       <screen x="0" y="0" width="1280" height="994" />
     </state>

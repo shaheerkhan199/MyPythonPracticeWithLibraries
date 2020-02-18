@@ -1,3 +1,4 @@
+from cytoolz.itertoolz import _outer_join
 from django.shortcuts import render
 from django.http import HttpResponse
 import json
@@ -14,9 +15,11 @@ shopping_bot = ChatBot(
 trainer = ChatterBotCorpusTrainer(shopping_bot)
 trainer.train("chatterbot.corpus.english")
 
-def index(request):
-    # return HttpResponse("This is ChatBot Chat App")
-    return render(request, 'chatWindow.html')
+# def index(request):
+#     # return HttpResponse("This is ChatBot Chat App")
+#     bot_response = "This is debugging"
+#     output = {'botResponse': bot_response}
+#     return render(request, 'test.html', output)
 
 
 def render_chat_window(request):
@@ -29,4 +32,5 @@ def get_bot_response(request):
     bot_response = shopping_bot.get_response(user_input)
     print(bot_response)
     output = {'botResponse': bot_response}
-    return render(request, 'chatWindow.html', output)
+    # return render(request, 'chatWindow.html', output)
+    return HttpResponse(bot_response)

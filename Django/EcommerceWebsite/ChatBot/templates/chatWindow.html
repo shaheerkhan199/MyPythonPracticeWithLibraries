@@ -4,7 +4,6 @@
 
 {% block content %}
     {% load static %}
-<script>var data = "{{ serialized_data | safe }}"; </script>
 <script>
 
 	//My code
@@ -28,7 +27,7 @@
 								</div>\
 								';
 						$('.msg_card_body').append(html);
-						//	chat_scrolldown();
+						chat_scrolldown();
 						var msg = $("#msgArea").val("");
 			}
 			//document.getElementById('#msg_card_body').scrollIntoView({block: 'start', behavior: 'smooth'});
@@ -40,12 +39,15 @@
 									<img src="{% static 'ChatBot/images/shaheer.jpeg' %}" class="rounded-circle user_img_msg">\
 								</div>\
 								<div class="msg_cotainer">\
-									'+ {{ botResponse }} +'\
+									'+  data  +'\
 									<span class="msg_time">8:43 AM, Today</span>\
 								</div>\
 							</div>\
 					';
+					//console.log(data);
+
 			$(".msg_card_body").append(botHtml);
+			chat_scrolldown();
 			//document.getElementById('#msg_card_body').scrollIntoView({block: 'start', behavior: 'smooth'});
 			});
 
@@ -113,7 +115,7 @@ function chat_scrolldown() {
 						<div class="card-header msg_head bg-dark">
 							<div class="d-flex bd-highlight">
 								<div class="img_cont">
-									<img src="{% static 'ChatBot/images/user1.jpg' %}" class="rounded-circle user_img">
+									<img src="{% static 'ChatBot/images/chatbot2.jpg' %}" class="rounded-circle user_img">
 									<span class="online_icon"></span>
 								</div>
 								<div class="user_info">
@@ -135,14 +137,14 @@ function chat_scrolldown() {
 						<div class="card-body msg_card_body" id="msg_card_body">
 							<div class="d-flex justify-content-start mb-4">
 								<div class="img_cont_msg">
-									<img src="{% static 'ChatBot/images/shaheer.jpeg' %}" class="rounded-circle user_img_msg">
+									<img src="{% static 'ChatBot/images/chatbot2.jpg' %}" class="rounded-circle user_img_msg">
 								</div>
 								<div class="msg_cotainer">
 									Hi, how are you SARGM?
 									<span class="msg_time">8:40 AM, Today</span>
 								</div>
 							</div>
-							<div class="d-flex justify-content-end mb-4">
+							 <div class="d-flex justify-content-end mb-4">
 								<div class="msg_cotainer_send">
 									Hi how can help you?
 									<span class="msg_time_send">8:40 AM, Today</span>
@@ -153,7 +155,7 @@ function chat_scrolldown() {
 							</div>
 							<div class="d-flex justify-content-start mb-4">
 								<div class="img_cont_msg">
-									<img src="{% static 'ChatBot/images/shaheer.jpeg' %}" class="rounded-circle user_img_msg">
+									<img src="{% static 'ChatBot/images/chatbot2.jpg' %}" class="rounded-circle user_img_msg">
 								</div>
 								<div class="msg_cotainer">
 									Can you suggest me a good phone?
@@ -171,7 +173,7 @@ function chat_scrolldown() {
 							</div>
 							<div class="d-flex justify-content-start mb-4">
 								<div class="img_cont_msg">
-									<img src="{% static 'ChatBot/images/shaheer.jpeg' %}" class="rounded-circle user_img_msg">
+									<img src="{% static 'ChatBot/images/chatbot2.jpg' %}" class="rounded-circle user_img_msg">
 								</div>
 								<div class="msg_cotainer">
 									Yes i have decide my budget 40.000
@@ -189,7 +191,7 @@ function chat_scrolldown() {
 							</div>
 							<div class="d-flex justify-content-start mb-4">
 								<div class="img_cont_msg">
-									<img src="{% static 'ChatBot/images/shaheer.jpeg' %}" class="rounded-circle user_img_msg">
+									<img src="{% static 'ChatBot/images/chatbot2.jpg' %}" class="rounded-circle user_img_msg">
 								</div>
 								<div class="msg_cotainer">
 									I like samsung phone

@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="332ed610-0359-4c87-9857-3f94871bc5ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ChatBot/shopping_bot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatBot/templates/chatWindow.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBot/templates/chatWindow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatBot/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBot/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3-shm" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatBot/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBot/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatBot/shopping_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBot/shopping_bot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3-wal" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3-wal" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

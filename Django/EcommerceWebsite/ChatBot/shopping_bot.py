@@ -6,8 +6,8 @@ shopping_bot = ChatBot(
         "My Shopping Bot",
         storage_adapter="chatterbot.storage.SQLStorageAdapter"
     )
-trainer = ChatterBotCorpusTrainer(shopping_bot)
-trainer.train("chatterbot.corpus.english")
+# trainer = ChatterBotCorpusTrainer(shopping_bot)
+# trainer.train("chatterbot.corpus.english")
 
 negotiation_data = [
     'I want to buy this product',
@@ -25,6 +25,6 @@ negotiation_data = [
     'okay',
     'Thanks for contacting us'
 ]
-trainer.train("chatterbot.corpus.english")
-trainer_test = ListTrainer(shopping_bot)
-trainer_test.train(negotiation_data)
+# trainer.train("chatterbot.corpus.english")
+# trainer_test = ListTrainer(shopping_bot)
+# trainer_test.train(negotiation_data)

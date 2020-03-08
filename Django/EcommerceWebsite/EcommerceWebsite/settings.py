@@ -27,10 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+import chatterbot.ext.django_chatterbot
 # Application definition
 
 INSTALLED_APPS = [
+'chatterbot.ext.django_chatterbot',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

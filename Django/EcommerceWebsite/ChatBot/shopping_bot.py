@@ -4,10 +4,12 @@ from chatterbot.trainers import ListTrainer
 
 shopping_bot = ChatBot(
         "My Shopping Bot",
+        read_only=False,
+        database="shop",
         storage_adapter="chatterbot.storage.SQLStorageAdapter"
     )
-# trainer = ChatterBotCorpusTrainer(shopping_bot)
-# trainer.train("chatterbot.corpus.english")
+trainer = ChatterBotCorpusTrainer(shopping_bot)
+trainer.train("chatterbot.corpus.english")
 
 negotiation_data = [
     'I want to buy this product',

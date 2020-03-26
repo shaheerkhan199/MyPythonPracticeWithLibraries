@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="332ed610-0359-4c87-9857-3f94871bc5ed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatBot/shopping_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatBot/shopping_bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EcommerceWebsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/EcommerceWebsite/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3-shm" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3-shm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3-wal" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3-wal" afterDir="false" />
@@ -37,7 +35,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SimpleChatBotWithDjango" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
@@ -102,18 +100,18 @@
       <screen x="0" y="0" width="1280" height="994" />
     </state>
     <state x="294" y="90" key="CommitChangelistDialog2/0.0.1280.994@0.0.1280.994" timestamp="1579753050036" />
-    <state x="420" y="252" key="FileChooserDialogImpl" timestamp="1582711025935">
+    <state x="420" y="252" key="FileChooserDialogImpl" timestamp="1585029356362">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state x="420" y="252" key="FileChooserDialogImpl/0.0.1280.994@0.0.1280.994" timestamp="1582711025935" />
+    <state x="420" y="252" key="FileChooserDialogImpl/0.0.1280.994@0.0.1280.994" timestamp="1585029356362" />
     <state x="141" y="140" key="SettingsEditor" timestamp="1579766741164">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
     <state x="141" y="140" key="SettingsEditor/0.0.1280.994@0.0.1280.994" timestamp="1579766741164" />
-    <state x="335" y="321" key="com.intellij.ide.util.TipDialog" timestamp="1583623313133">
+    <state x="335" y="321" key="com.intellij.ide.util.TipDialog" timestamp="1585026598675">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
-    <state x="335" y="321" key="com.intellij.ide.util.TipDialog/0.0.1280.994@0.0.1280.994" timestamp="1583623313133" />
+    <state x="335" y="321" key="com.intellij.ide.util.TipDialog/0.0.1280.994@0.0.1280.994" timestamp="1585026598675" />
     <state x="303" y="213" width="672" height="678" key="search.everywhere.popup" timestamp="1579752741299">
       <screen x="0" y="0" width="1280" height="994" />
     </state>

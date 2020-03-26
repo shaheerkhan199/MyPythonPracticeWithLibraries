@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+    <center><h1>This is my custom made chatbot</h1>
+    <h2>You can ask your queries with chatbot</h2></center>
+<center><form method="post">
+    {% csrf_token %}
+
+    <textarea rows=20 cols=60>{{conv}}</textarea>
+
+    <br><br>
+    <input type="textbox" name="user_input" placeholder="Type your message here" value=""/>
+
+    <button type="submit">Send</button>
+
+    <input type="hidden" name ="conv"  value="{{conv}}" />
+    {{resp}}
+</form>
+    </center>
+</body>
+</html>

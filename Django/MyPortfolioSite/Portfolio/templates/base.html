@@ -8,7 +8,159 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/customStyle.css' %}">
 </head>
 <body>
-    {% block content %} {% endblock %}
+<!-- Navigation Bar-->
+    <div class="navBar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning border border-dark">
+          <a class="navbar-brand font-italic" href="#">Porfolio</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active font-weight-bold" href="/sheri/">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link text-dark font-weight-bold" href="/sheri/about">About</a>
+              <a class="nav-item nav-link text-dark font-weight-bold" href="/sheri/resume">Resume</a>
+              <a class="nav-item nav-link text-dark font-weight-bold" href="/sheri/services">Services</a>
+              <a class="nav-item nav-link text-dark font-weight-bold" href="/sheri/contact">Contact</a>
+            </div>
+          </div>
+        </nav>
+    </div>
+<!--  Center Div  -->
+    <div class="container-fluid">
+        <div class="row text-center bg-dark p-5">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h1 class="text-white">Muhammad Shaheer khan</h1>
+                <h4 class="text-warning">Web Designer | Developer</h4>
+                <h6 class="text-white">Python Developer</h6>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+<br/>
+
+{% block content %} {% endblock %}
+
+<!--Footer -->
+<footer class="page-footer font-small stylish-color-dark pt-4 bg-dark text-white">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
+        <p class="text-justify">
+            This is my personal portfolio website, just take a tour and have a look at this site feel
+            free to contact me if you need any assistance from me. Happy coding
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Page Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Home</a>
+          </li>
+          <li>
+            <a href="#!">About</a>
+          </li>
+          <li>
+            <a href="#!">Resume</a>
+          </li>
+          <li>
+            <a href="#!">Services</a>
+          </li>
+          <li>
+            <a href="#!">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Social Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Facebook</a>
+          </li>
+          <li>
+            <a href="#!">Github</a>
+          </li>
+          <li>
+            <a href="#!">Stack Overflow</a>
+          </li>
+          <li>
+            <a href="#!">Fiverr</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
+
+        <ul class="list-unstyled">
+          <li>
+                <p>karachi, Pakistan</p>
+
+          </li>
+          <li>
+                <p>m.shaheerkhan199@gmail.com</p>
+          </li>
+          <li>
+                <p>0346-2980462</p>
+          </li>
+          <li>
+
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+<hr/>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+      © 2020 Copyright | M.Shaheer khan
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
     <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script> {% block customJavaScript %} {% endblock %} </script>

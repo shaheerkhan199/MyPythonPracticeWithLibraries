@@ -1,7 +1,7 @@
 Qualification (Qid, InstituteName, Degree, Year, Grade)
 certifications (Cid, Institute, Year, CertificateTitle)
 experience (Eid, Firm_name, Designation, StartDate, EndDate)
-Skills (Sid, Technology, strength)
-Projects (Pid, projectTitle, Technology)
+Skills (techId, TechnologyName, strength)
+Projects (Pid, projectTitle, Technology, description, sourceLink)
 https://resumegenius.com/resume-samples/web-developer-resume-example
 

@@ -49,7 +49,7 @@ conda-verify==3.1.1
 ConfigArgParse==0.13.0
 constantly==15.1.0
 contextlib2==0.5.5
-cryptography==2.4.2
+cryptography==3.2
 cycler==0.10.0
 cymem==2.0.3
 Cython==0.29.2

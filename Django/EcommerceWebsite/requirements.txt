@@ -265,7 +265,7 @@ tornado==5.1.1
 tqdm==4.40.2
 traitlets==4.3.2
 twilio==6.36.0
-Twisted==19.10.0
+Twisted==22.1.0
 typing==3.7.4.1
 tzlocal==2.0.0
 unicodecsv==0.14.1
